@@ -23,24 +23,24 @@ Functions to be implemented:
 */
 
 
-
-
-int init(int size)
+int* init(int size)
 {
-    int vec[size];
+    int* vec = malloc(size * sizeof(int));
+    
     for(int i = 0; i < size; i++)
     {
         vec[i] = 0; 
     }
-
     return vec; 
 }
 
-void add()
+void add(int* vec, int size, int value)
 {
-
-
-    return 0; 
+    for(int i = 0; i < size - 1; i++)
+    {
+        vec[i] = vec[i + 1]; 
+    }
+    vec[size] = value; 
 }
 
 int get_avg()
