@@ -62,12 +62,37 @@ int get_avg(int* vec, int size)
     return avg;
 }
 
-int get_max()
+int get_max(int* vec, int size)
 {
-    return 0;
+    int max_value = 0;
+
+    for (int i = 0; i < size ; i++)
+    {
+        if (vec[i] != -1000)
+        {
+            if (max_value < vec[i])
+            {
+                max_value = vec[i]; 
+            }
+        }
+    }
+
+    return max_value;
 }
 
-int get_min()
+int get_min(int* vec, int size)
 {
-    return 0;
+    int min_value = 1000;
+
+    for (int i = 0; i < size ; i++)
+    {
+        if (vec[i] != -1000)
+        {
+            if (min_value > vec[i])
+            {
+                min_value = vec[i]; 
+            }
+        }
+    }
+    return min_value;
 }
