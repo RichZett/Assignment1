@@ -7,7 +7,7 @@
 int* init(int size); 
 void add(int* vec, int size, int value);
 
-int get_avg();
+int get_avg(int* vec, int size);
 int get_max();
 int get_min();
 

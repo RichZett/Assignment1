@@ -29,7 +29,7 @@ Lecture:
 
 Terminal commands:
 
-    gcc filename.c ==> compile file filename.c
+    gcc filename.c ==> compile the file filename.c
 
     ll  ==> list items in file
     -S  ==> source
@@ -52,5 +52,7 @@ GitHub
 
 
 VSC
-
     cmd + shift + p --> Search format doc. 
+
+Makefiles
+    Create instructions for the compiler 
