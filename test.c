@@ -18,7 +18,6 @@ int main()
     add(vec, size, 22);
     add(vec, size, 21);
 
-   
 
     int avg2 = get_avg(vec, size);
     printf("The second avg is: %d\n", avg2);
