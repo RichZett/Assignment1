@@ -21,6 +21,7 @@ int* init(int size)
         printf("Error: Can not initiate vector since the size is too small. \n");
         return 0; 
     }
+    
     int* vec = malloc(size * sizeof(int)); // Need to remove from heap later
 
     for (int i = 0; i < size; i++)

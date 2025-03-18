@@ -2,6 +2,9 @@ C-language:
     Arrays/ Vectors
         - There is no vectors only arrays. The array is
           initialized by the type they contain. 
+    
+    Bool 
+        - There is no bool naturally. Could maybe be added with a library or you could return a condition. The value will be 1 if true and 0 if false.       
 
 
 GitHub:
@@ -21,7 +24,6 @@ Lecture:
 
         - Ex: doc.o file
         - % means all
-        - 
 
     Intro to the CMake build system
         CMake is designed to be a generator to create 
