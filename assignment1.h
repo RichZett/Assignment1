@@ -4,6 +4,8 @@
 #include <stdlib.h> 
 #include <stdio.h>
 
+int test_size(int size);
+
 /**
  *  @brief The function init() initializes the vector. 
  */

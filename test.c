@@ -2,11 +2,15 @@
 
 int main()
 {
+    // Test for error if size is too small/ does not exist
+    int size_fake = 0;
+    int* vec_fake = init(size_fake);
+
     // Decide the size for the test case and initiate the vector
     int size = 4;
     int* vec = init(size);
     // Print to see if vector is created as intended. Should print -1000 for four elements  
-    printf("Test initiated vec: \n");
+    printf("\nTest initiated vec: \n");
     for (int i = 0; i < size; i++)
     {
         printf(" Initiated vector element %d: %d\n", i, vec[i]);

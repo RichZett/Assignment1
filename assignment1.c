@@ -1,25 +1,26 @@
 #include "assignment1.h"
 
-// This file ONLY contains the implementation of the functions
-
 /*
 The basic function of the code is to use an array/ vector
 to store a certain amount of data. And if more values are
 added, the first values will be removed and all the values
 will move one space to the left and add the newest value
 to the end of the array/vector.
-
-Functions to be implemented:
-- TS.init()
-- TS.add(value)
-- TS.avg()
-- TS.max()
-- TS.min()
-
 */
+
+int test_size(int size)
+{
+    return size > 0; 
+}
 
 int* init(int size)
 {
+    int check =  test_size(size); 
+    if (check == 0)
+    {
+        printf("Error: Can not initiate vector since the size is too small. \n");
+        return 0; 
+    }
     int* vec = malloc(size * sizeof(int)); // Need to remove from heap later
 
     for (int i = 0; i < size; i++)
