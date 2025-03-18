@@ -37,11 +37,6 @@ void add(int* vec, int size, int value)
     }
     vec[size - 1] = value;
 
-    for (int i = 0; i < size; i++)
-    {
-        printf("X Vector element %d: %d\n", i, vec[i]);
-    }
-  
 }
 
 int get_avg(int* vec, int size)

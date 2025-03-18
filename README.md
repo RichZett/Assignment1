@@ -5,9 +5,16 @@ C-language:
 
 
 GitHub:
-    Need to spend time outside of the class to optimize the 
-    lesson time. 
+    ---- Most used ----
+    add
+    commit ==> when youve done changes (not included things from other branches)
+    push
+    -------------------
 
+    checkout ==> jump between branches
+    log
+    -b ==> branch
+    reset --hard ==> remove all unsaved changes
 
 Lecture:
     Makefiles
@@ -37,22 +44,18 @@ Terminal commands:
     -B  ==> build
     -gui ==> graphical
 
-
-GitHub
-    ---- Most used ----
-    add
-    commit ==> when youve done changes (not included things from other branches)
-    push
-    -------------------
-
-    checkout ==> jump between branches
-    log
-    -b ==> branch
-    reset --hard ==> remove all unsaved changes
-
-
 VSC
     cmd + shift + p --> Search format doc. 
 
 Makefiles
-    Create instructions for the compiler 
+    Creates instructions for the compiler 
+    1. Create file "CMakeList.txt" in working directory.
+    2. In the file add: 
+        cmake_minimum_required(VERSION 3.20)
+        project(Assignment1 VERSION 1.0)
+        add_executable(exec assignment1.c test.c)
+    3. Create folder "build" in the working directory with mkdir in terminal.
+    4. Enter the folder "build".
+    5. Return with cmake, write "cmake .." in terminal.
+    6. Compile it with "make" in terminal.
+    7. Re-enter the "build" folder. Run ./exec 
