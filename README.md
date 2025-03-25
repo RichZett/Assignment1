@@ -52,10 +52,14 @@ VSC
 Makefiles
     Creates instructions for the compiler 
     1. Create file "CMakeList.txt" in working directory.
-    2. In the file add: 
+    2. Define the CMakeList.txt. 
+        OBS! The following  will be wrong until 3. 
+        -----------------------------------------
+        In the file add: 
         cmake_minimum_required(VERSION 3.20)
         project(Assignment1 VERSION 1.0)
         add_executable(exec assignment1.c test.c)
+        -----------------------------------------
     3. Create folder "build" in the working directory with mkdir in terminal.
     4. Enter the folder "build".
     5. Return with cmake, write "cmake .." in terminal.

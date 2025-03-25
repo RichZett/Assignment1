@@ -51,6 +51,8 @@ int main()
 
 
     free(vec); // Remove vec from the heap
+    free(vec_fake); // Remove vec from the heap
+
     return 0;
 
 }
